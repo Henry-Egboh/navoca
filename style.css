@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* height: 100vh; */
+}
+
+/* =========================================================================================================================
+==========================================================     navbar section  =================================================*/
+/* list item container */
+.nav, .nav1 {
+    background-color: #dcedce;
+    padding: 1rem 4rem;
+}
+
+.nav {
+    border-bottom: 1px solid #fff;
+}
+/* ul elements */
+.navbar ul {
+    list-style: none;
+    text-align: right;
+}
+
+.navbar1 ul{
+    text-align: center;
+}
+
+/* li tags display */
+.navbar ul li, .navbar1 ul li {
+    display: inline-block;
+}
+
+.navbar1 ul li {
+    background-color: #1e424c;
+}
+
+/* a tags for both navbars */
+.navbar ul li a  {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 300;
+    display: block;
+    padding: 0.5rem 1rem; 
+}
+
+/* a tags color */
+.navbar ul li a {
+    color: rgb(38, 44, 57);
+}
+
+.navbar1 ul li a {
+    color: #fff;
+}
+
+/* hover for both navbars */
+.navbar ul li a:hover {
+    transform: scale(1.2);
+    transition: all 500ms ease-in-out;
+}
+
+/* hover effects */
+.navbar ul li a:hover {
+    color: #1e424c;
+}
+
+.navbar1 ul li a:hover {
+    color: #1e424c;
+    background-color: #fff;
+}
+
+/* ==================================================================================================================================
+===================================== HEADER ===================================================================================== */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40rem;
+    background-color: #dcedce;
+    text-align: center;
+}
+
+/* showcase contents */
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* h1 tag */
+.showcase h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #630f0f;
+    border-top: 1px dashed #1e424c;
+    border-bottom: 1px dashed #1e424c;
+    padding: 0.4rem 0rem;
+}
+
+.showcase h2 {
+    font-size: 1.6rem;
+    padding: 2rem 0rem;
+    color: #1e424c;
+    font-weight: 300;
+}
+
+/* button */
+.button {
+    background-color: #630f0f;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 30%;
+    border-radius: 0.4rem;
+}
+
+.button:hover {
+    background-color: #704343;
+    transform: translate(-5);
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.button a:hover {
+    color: #cdcdcd;
+}
+
+/* ==========================================================================================================================
+=============================================================== main section  ===============================================*/
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem 8rem;
+    align-items: center;
+    padding: 8rem 4rem;
+}
+
+/* =======================================================================================================================
+===============================================SECTION with 3 col div ================================================ */
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem 2rem;
+    grid-auto-flow: row;
+    text-align: left;
+    padding: 0rem 4rem 8rem;
+}
+
+.tiles {
+    background-color: #e4e4e4;
+    padding: 2rem;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* fourth tiles class div */
+.tiles:nth-of-type(4) {
+    grid-area: 2 / 1 / 3 / 4;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0rem;
+}
+
+.tiles_content {
+    width: 60%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+
+/* p tags for main and section content*/
+.tiles p, .sec > p {
+    line-height: 1.4rem;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem 0rem 0rem;
+    color: rgb(38, 44, 57);
+}
+
+/* h tags for main and section content */
+.tiles h4, .sec h4 {
+    color: #630f0f;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.img {
+    width: 100%;
+}
+
+/* ===========================================================================================================
+======================================================= footer section ================================================================*/
+.footer {
+    display: grid;
+    background-color: #0f0912;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* section containing list items */
+.listings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0rem 4rem;
+    padding: 4rem 4rem;
+    border-top: 1px groove #dcedce;
+    border-bottom: 1px groove #dcedce;
+}
+
+/* p tag in listings */
+.list p {
+    color: #dcedce;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+}
+
+/* list items div at the center */
+.list:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 4rem;
+    justify-items: center;
+}
+
+/* top and bottom footer divs */
+.base1, .base2 {
+    min-height: 8rem;
+    padding: 4rem 4rem;
+}
+
+/* footer list items */
+.list ul {
+    list-style: none;
+}
+
+.list ul li a {
+    text-decoration: none;
+    padding: 0.5rem 0rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #dcedce;
+    display: block;
+}
+
+.list ul li a:hover {
+    color: #fff;
+}
+
+/* list header tags */
+.list h4 {
+    padding-bottom: 2rem;
+}
