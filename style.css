@@ -172,11 +172,11 @@ body {
     background-color: #fff;
     display: flex;
     justify-content: center;
-    padding: 10rem 0rem;
+    padding: 10rem 4rem;
 }
 
+/* set width to div inside the fourth tiles div */
 .tiles_content {
-    width: 60%;
     text-align: center;
     line-height: 1.5rem;
 }
@@ -235,7 +235,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem 4rem;
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 /* top and bottom footer divs */
@@ -265,4 +265,156 @@ body {
 /* list header tags */
 .list h4 {
     padding-bottom: 2rem;
+}
+
+/* ===================================================================================================================
+=========================================== MEDIA QUERY =============================================================== */
+/* ===================================================================================================================
+================================================ mobile devices ====================================================== */
+@media screen {
+    /* prevents list item break */
+    .nav, .nav1 {
+        padding: 1rem 0rem;
+    }
+    /* align navbar ul to center */
+    .navbar ul {
+        text-align: center;
+    }
+    /* Also prevents list item break */
+    .navbar ul li a {
+        padding: 0.5rem 0.5rem; 
+    }
+
+    /* spacing navbar1 */
+    .navbar1 ul li {
+        margin: 0rem 0rem 0.5rem;
+    }
+    
+    /* main section */
+    .main {
+        grid-template-columns: 1fr;
+        gap: 4rem 0rem;
+        padding: 4rem 4rem;
+    }
+
+    /* display tiles div in columns  */
+    .section {
+        grid-template-columns: 1fr;
+        gap: 4rem 0rem;
+        padding: 0rem 4rem 4rem;
+    }
+
+    /* fourth tiles class div */
+    .tiles:nth-of-type(4) {
+        grid-area: 4 / 1 / 5 / 2;
+        padding: 4rem 4rem;
+    }
+
+    /* section containing list items */
+    .listings {
+        grid-template-columns: 1fr;
+        gap: 0rem 0rem;
+    }
+
+    /* spacing the list items and the text above it */
+    .list:nth-of-type(1) {
+        margin-bottom: 4rem;
+        /* justify-items: center; */
+    }
+}
+
+/* ==============================================================================================================
+================================================== ipad devices =============================================== */
+@media screen and (min-width: 568px) {
+    /* prevents list item break */
+    .nav, .nav1 {
+        padding: 1rem 4rem;
+    }
+    /* align navbar ul to center */
+    .navbar ul {
+        text-align: right;
+    }
+    /* center the navbar1 to the page */
+    .navbar1 ul {
+        text-align: center;
+    }
+
+    /* Also prevents list item break */
+    .navbar ul li a {
+        padding: 0.5rem 1rem; 
+    }
+
+    /* spacing navbar1 */
+    .navbar1 ul li {
+        margin: 0rem;
+    }
+
+    /* image and text main div */
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8rem 8rem;
+        padding: 8rem 4rem;
+    }
+
+    /* display tiles div in columns  */
+    .section {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 2rem;
+        padding: 0rem 4rem 8rem;
+    }
+
+    /* fourth tiles class div */
+    .tiles:nth-of-type(4) {
+        grid-area: 2 / 2 / 3 / 3;
+        padding: 2rem 2rem;
+        background-color: #e4e4e4;
+    }
+
+    /* section containing list items */
+    .listings {
+        grid-template-columns: 1fr;
+        gap: 0rem 0rem;
+        justify-items: center;
+    }
+
+    /* spacing the list items and the text above it */
+    .list:nth-of-type(1) {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    /* list items spacing */
+    .list:nth-of-type(2) {
+        gap: 4rem 8rem;
+    }
+}
+
+/* =======================================================================================================================
+=========================================== laptops & desktops ======================================================== */
+@media screen and (min-width: 992px) {
+    .section {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8rem 2rem;
+        padding: 0rem 4rem 8rem;
+    }
+
+    /* fourth tiles class div */
+    .tiles:nth-of-type(4) {
+        grid-area: 2 / 1 / 3 / 4;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        padding: 10rem 4rem;
+    }
+
+    /* section containing list items */
+    .listings {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0rem 4rem;
+    }
+
+    /* spacing the list items and the text above it */
+    .list:nth-of-type(1) {
+        margin-bottom: 0rem;
+    }
 }
