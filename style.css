@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@200;300;400;500&family=Comfortaa:wght@500&display=swap');
+
 
 * {
     padding: 0px;
@@ -8,8 +9,7 @@
 
 body {
     font-size: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* height: 100vh; */
+    font-family: 'Anek Devanagari', sans-serif;
 }
 
 /* =========================================================================================================================
@@ -294,14 +294,19 @@ body {
     .main {
         grid-template-columns: 1fr;
         gap: 4rem 0rem;
-        padding: 4rem 4rem;
+        padding: 4rem 1rem;
+    }
+
+    /* re-order columns */
+    .sec:nth-of-type(4) {
+        grid-area: 3 / 1 / 4 / 2;
     }
 
     /* display tiles div in columns  */
     .section {
         grid-template-columns: 1fr;
         gap: 4rem 0rem;
-        padding: 0rem 4rem 4rem;
+        padding: 0rem 1rem 4rem;
     }
 
     /* fourth tiles class div */
@@ -353,14 +358,19 @@ body {
     .main {
         grid-template-columns: repeat(2, 1fr);
         gap: 8rem 8rem;
-        padding: 8rem 4rem;
+        padding: 8rem 2rem;
+    }
+
+    /* re-order columns */
+    .sec:nth-of-type(4) {
+        grid-area: 2 / 2 / 3 / 3;
     }
 
     /* display tiles div in columns  */
     .section {
         grid-template-columns: 1fr 1fr;
         gap: 2rem 2rem;
-        padding: 0rem 4rem 8rem;
+        padding: 0rem 2rem 8rem;
     }
 
     /* fourth tiles class div */
@@ -396,6 +406,10 @@ body {
         grid-template-columns: repeat(3, 1fr);
         gap: 8rem 2rem;
         padding: 0rem 4rem 8rem;
+    }
+
+    .main {
+        padding: 8rem 4rem;
     }
 
     /* fourth tiles class div */
